@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Educational Website</title>
+  <meta charset="UTF-8">
+  <!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="gameFormatNew.css">
+  <script>
+    function tp() {
+      window.scroll({top:815, behavior:'smooth'});
+    }
+    function changePic() {
+      pic = document.getElementById("ethanPic");
+      pic.src="ethanNew.JPG";
+    }
+    function changePicBac() {
+      pic = document.getElementById("ethanPic");
+      pic.src="ethan.gif";
+    }
+    function updateGameCode() {
+      object = document.getElementById("code");
+      var string = object.value;
+      code = document.getElementById("gameCode");
+      code.innerHTML="Game Code: " + string;
+    }
+  </script>
+</head>
+<body style="background-color:black;">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark everythingBar" style="position:fixed; width:100%;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown"
+            role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="true" style="outline:none;">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <div class="dropdown-menu sideBar" aria-labelledby="gamesDropdown">
+            <a onclick="tp()" href="https://shellshock.io" class="btn btn-warning btnSpace" style="margin-top:-5px;" target="secretPage">
+              <img class="picBord gameIcons" src="shellshock.png" alt="shellshock" />
+            </a>
+            <a onclick="tp()" href="http://surviv.io" class="btn btn-warning btnSpace" target="secretPage">
+              <img class="picBord gameIcons" src="surviv.jpg" alt="surviv" />
+            </a>
+            <a onclick="tp()" href="https://krunker.io" class="btn btn-warning btnSpace" target="secretPage">
+              <img class="picBord gameIcons" src="krunker.jpg" alt="krunker" />
+            </a>
+            <img onmouseover = "changePic()" onmouseout = "changePicBac()" id="ethanPic"
+                class="picBord gameIcons" style="width:110px;height:145px;margin: 8px 0px -5px 5px;"
+                src="ethan.gif" alt="ethan"/>
+            <div style="margin-top:7px;">
+              <span class="badge basicFont" style="background-color:#2A8FF7;font-weight:10">&#169; Bickolas</span>
+            </div>
+          </div>
+        <li class="nav-item navbar-brand btn btn-dark" style="font-size:18px;" data-toggle="modal" data-target="#ethan">
+          Academic Educational Website
+        </li>
+      </ul>
+      <!-- links -->
+      <ul class="navbar-nav ml-auto navbar-expand">
+        <li class="nav-item">
+          <a class="nav-link" href="https://quizlet.com/latest" target="_blank">|Quizlet|</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.webassign.net/wa-auth/login" target="_blank">|Chem|</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.apstudynotes.org/european-history/outlines/chapter-13-european-society-in-the-age/" target="_blank">|Euro|</a>
+        </li>
+      </ul>
+      <!-- buttons -->
+      <ul class="navbar-nav navbar-expand">
+        <li>
+          <a href="#educationSection" class="btn btn-warning">emergency</a>
+        </li>
+        <li>
+          <a href="#secretSection" class="btn btn-primary">
+            <img src="redo.png" alt="redo" style="width:20px;height:20px;" />
+          </a>
+        </li>
+        <li>
+          <a href="#googleSection" class="btn btn-primary">
+            <img src="search.png" alt="search" style="width:20px;height:20px;" />
+          </a>
+        </li>
+        <li>
+          <a href="#optionsSection" class="btn btn-primary">
+            <img src="squares.png" alt="squares" style="width:20px;height:20px;" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- bishops homepage -->
+  <a name="educationSection">
+    <div style="height:0px;"></div>
+    <iframe src="https://www.bishops.com" style="width:100%;height:750px;margin-top:60px;" name="educationPage"></iframe>
+  </a>
+
+  <!-- games iframe -->
+  <a name="secretSection">
+    <div style="height:60px;"></div>
+    <iframe style="width:100%;height:675px;" name="secretPage"></iframe>
+  </a>
+
+  <!-- bing -->
+  <a name="googleSection">
+    <div style="height:60px;"></div>
+    <iframe src="http://www.bing.com" style="width:100%;height:675px;"></iframe>
+  </a>
+
+  <!-- all options -->
+  <a name="optionsSection">
+    <div style="height:60px;"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4">
+          <a href="https://shellshock.io" class="btn btn-warning btnSpace optionsMargins" target="secretPage">
+            <img class="picBord optionsBarSquare" src="shellshock.png" alt="shellshock" />
+          </a>
+        </div>
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4">
+          <a href="http://surviv.io" class="btn btn-warning btnSpace optionsMargins" target="secretPage">
+            <img class="picBord optionsBarSquare" src="surviv.jpg" alt="surviv" />
+          </a>
+        </div>
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4">
+          <a href="https://krunker.io" class="btn btn-warning btnSpace optionsMargins" target="secretPage">
+            <img class="picBord optionsBarSquare" src="krunker.jpg" alt="krunker" />
+          </a>
+        </div>
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4">
+          <a href="#googleSection" class="btn btn-warning optionsMargins">
+            <img class="picBord optionsBarSquare" src="bing.jpg" alt="bing" />
+          </a>
+        </div>
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4">
+          <a href="#educationSection" class="btn btn-warning optionsMargins">
+            <img class="picBord optionsBarSquare" src="bishops.png" alt="bishops" />
+          </a>
+        </div>
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4">
+          <div class="container optionsBarSquare" style="margin-left:20px;margin-top:35px;">
+            <!-- scroll to secret section -->
+            <a href="#secretSection" class="btn btn-primary" style="width:250px;height:50px;">
+              <p style="font-size:20px;font-family:verdana;">[Secret Section]</p>
+            </a>
+            <!-- game code -->
+            <span id="gameCode" class="badge badge-primary gameCodeBadge">Game Code: d8stkc</span>
+            <!-- game code submit -->
+            <label class="basicFont">New game code:</label>
+            <form name="gameCodeSubmit">
+              <input type="text" id="code" placeholder="game code" style="width:250px;">
+              <a class="btn btn-primary" style="margin-top:10px;width:100px;height:35px;color:white;" onclick="updateGameCode()">Submit</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <!-- some spacing on the bottom -->
+  <div style="height:50px;">
+  </div>
+
+  <!-- modal of ethan -->
+  <div class="modal" id="ethan" style="width:340px;margin-left:35%;margin-top:3%;">
+    <div class="modal-content" style="background-color:orange;">
+      <div class="modal-header">
+        <h3 class="modal-title basicFont">Ethan <i>blesses</i> you</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <img class="picBord gameIcons" style="width:300px;height:400px;" src="ethanNew.JPG" alt="ethan" />
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">dismiss the blessings of Ethan Chuang</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

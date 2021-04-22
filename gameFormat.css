@@ -1,0 +1,81 @@
+.basicFont {
+  color: white;
+  font-family: verdana;
+}
+.navbar {
+  z-index:2;
+}
+.top {
+  z-index:3;
+}
+#gameBar {
+  width:5%;
+  position:fixed;
+  height:60px;
+  margin-left:0%;
+  margin-bottom:-10px;
+}
+#titleBar {
+  width:59%;
+  position:fixed;
+  height:60px;
+  margin-left:5%;
+  margin-bottom:-10px;
+}
+#linksBar {
+  width:20%;
+  position:fixed;
+  height:60px;
+  margin-left:64%;
+  margin-bottom:-10px;
+}
+#returnBar {
+  width:17%;
+  position:fixed;
+  height:60px;
+  margin-left:83%;
+  margin-bottom:-10px;
+}
+.picBord {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sideBar {
+  background-color: #343A40;
+  padding: 20px 15px 20px 20px;
+}
+.linkButton {
+  background-color:#343A40;
+  width:80px;
+}
+a:link {
+  color:black;
+  text-decoration:none;
+}
+a:hover {
+  color:black;
+  text-decoration:none;
+}
+a:active {
+  color:black;
+  text-decoration:none;
+}
+.gameIcons {
+  width: 100%;
+  height: 30%;
+}
+.btnSpace {
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.optionsBarSquare {
+  height:250px;
+  width:250px;
+}
+.optionsMargins {
+  margin:30px;
+}
+.col-sm-10
+.col-md-6
+.col-lg-4
+.col-xl-4
